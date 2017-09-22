@@ -1,0 +1,142 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html,body, #root, .full {
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+}
+.full{
+	display: flex;
+}
+.map {
+		width:calc(100% - 90px);
+		height: 100%;
+		overflow: hidden;
+		border:none;
+}
+.map.active{
+	width:calc(100% - 320px);
+}
+.toolbar{
+	background-color: rgb(77,106,121);
+	width:90px;
+	height: 100%;
+}
+.toolbar.active{
+	display: none;
+}
+
+.sideWindow{
+	display: none;
+}
+.sideWindow.active{
+	display: block;
+	width:320px;
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 100%;
+	overflow-y: scroll;
+ 	overflow-x: hidden;
+}
+
+.btn-toolbar{
+	font-size: 21px;
+	background: none;
+	color:white;
+	border:none;
+	padding-top:12px;
+	padding-left:12px;
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-start;
+}
+.btn-toolbar:hover{
+	background-color:#001E2C !important;
+}
+
+.btn-toolbar span{
+	font-size: 12px;
+	font-weight: lighter;
+	position: relative;
+	top: -5px;
+	margin-left:10px;
+}
+
+.btn-inside-toolbar{
+	font-size: 21px;
+	background: none;
+	color:black;
+	border:none;
+	padding-top:12px;
+	padding-left:12px;
+	position: relative;
+	left:257px;
+	cursor: pointer;
+}
+.sideWindow .input{
+	width: 100% !important;
+}
+.login-panel{
+	    width: 320px;
+    margin: 30px auto;
+    height: 200px;
+}
+.public_fixedDataTable_main{
+	border:none !important;
+}
+.fixedDataTableCellGroupLayout_cellGroup{
+	cursor: pointer;
+
+}
+.fixedDataTableCellGroupLayout_cellGroup:hover{
+	
+	color:white;
+}
+.fixedDataTableCellGroupLayout_cellGroup:hover .fixedDataTableCellLayout_wrap2{
+	background-color:#0098ef !important;
+}
+.public_fixedDataTableCell_wrap1.active{
+	background-color:#0098ef !important;
+	color:white;
+}
+button {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+    outline: none;
+}
+button:focus{
+	outline: none;
+}
+.hidden{
+	display: none;
+}
+.wrap-options{
+	display: flex;
+  height: 240px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.inline-panel{
+	display: inline-block;
+	width: 80px;
+	max-height: 210px;
+	height: 210px;
+	margin-right:10px;
+	white-space: normal;
+	cursor: pointer;
+}
+.directions{
+	cursor: pointer;
+	color: #0098ef;
+	font-size: 18px;
+}
